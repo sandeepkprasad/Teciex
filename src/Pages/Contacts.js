@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import contactsImg from "../Assests/contacts-img.webp";
 import { FaMapMarkerAlt, FaMobileAlt } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 
@@ -13,9 +12,18 @@ const Contacts = () => {
         <div className="about mb-5">
           <h3 className="fw-bold">Our Contacts</h3>
         </div>
-        <div className="container-lg bg-primary-subtle border rounded mb-5">
-          <div className="contact-img text-center py-5">
-            <img height={100} width={100} src={contactsImg} alt="..." />
+        <div className="container-lg mb-5">
+          <div className="contact-img text-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62177.91231202048!2d77.545953!3d13.091611!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae239fca36d85f%3A0x2491e7d8df223852!2sRCS%20TECHNOLOGY!5e0!3m2!1sen!2sin!4v1691936009210!5m2!1sen!2sin"
+              width="100%"
+              height="200"
+              style={{ border: "0px" }}
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              className="shadow rounded-4"
+            ></iframe>
           </div>
         </div>
         <div className="row justify-content-center">
