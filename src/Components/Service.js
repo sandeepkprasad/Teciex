@@ -63,10 +63,10 @@ const Service = () => {
     <section>
       <div className="container-lg py-5">
         <div className="row justify-content-center">
-          <div className="col-6 col-md-6">
+          <div className="col-12 col-md-6">
             <div className="heading text-center">
               <p className="fw-bold text-muted mb-0">SERVICES</p>
-              <h3 className="fw-bold">Our Vision & Our Goal</h3>
+              <h3 className="fw-bold">Services We Provide</h3>
             </div>
           </div>
         </div>

@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="container py-5">
       <div className="row justify-content-center">
@@ -8,7 +11,7 @@ const ContactUs = () => {
           <h3 className="fs-3 fw-bold">Let Us In Touch With You</h3>
         </div>
         <div
-          className="col-md-8 border border-primary-subtle p-5 rounded bg-light"
+          className="col-12 col-md-8 border border-primary-subtle p-5 rounded-5 bg-info shadow"
           style={{ width: "24rem" }}
         >
           <form>
@@ -18,24 +21,22 @@ const ContactUs = () => {
               </label>
               <input
                 type="name"
-                className="form-control"
+                className="form-control rounded-5"
                 id="name"
                 name="name"
                 value=""
                 aria-describedby="emailHelp"
-                placeholder="Enter Your Full Name"
               />
               <label htmlFor="number" className="form-label fw-bold mt-3">
                 Mobile
               </label>
               <input
                 type="number"
-                className="form-control"
+                className="form-control rounded-5"
                 id="number"
                 name="number"
                 value=""
                 aria-describedby="emailHelp"
-                placeholder="Enter Your Mobile Number"
               />
             </div>
             <div className="mb-3">
@@ -44,14 +45,23 @@ const ContactUs = () => {
               </label>
               <input
                 type="email"
-                className="form-control"
+                className="form-control rounded-5"
                 id="email"
                 name="email"
                 value=""
-                placeholder="Enter Your Email"
               />
             </div>
-            <button type="submit" className="btn btn-primary">
+            <div className="mb-3">
+              <label fhtmlFor="message" className="form-label fw-bold">
+                Message
+              </label>
+              <textarea
+                className="form-control rounded-5"
+                id="message"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="submit" className="btn btn-danger rounded-5">
               Send
             </button>
           </form>

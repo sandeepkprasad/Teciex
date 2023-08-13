@@ -8,7 +8,7 @@ const Slider = () => {
     <section className="pt-5">
       <div
         id="carouselExampleAutoplaying"
-        className="carousel slide container-lg"
+        className="carousel slide container-fluid"
         data-bs-ride="carousel"
       >
         <div className="carousel-indicators">

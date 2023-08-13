@@ -1,6 +1,8 @@
 import React from "react";
 import sandeep from "../Assests/sandeep.jpg";
 import profile from "../Assests/profile.webp";
+import sunil from "../Assests/sunil.jpg";
+import hs from "../Assests/hs.jpg";
 
 const Team = () => {
   return (
@@ -20,12 +22,12 @@ const Team = () => {
               <img
                 height={100}
                 width={100}
-                src={profile}
+                src={sunil}
                 alt="..."
                 className="rounded-circle mb-3"
               />
               <h5 className="fw-bold mb-2">Sunil Kumar</h5>
-              <p className="text-muted mb-0">Founder, Teciex</p>
+              <p className="text-muted mb-0">Director, Tech & Sales</p>
             </div>
           </div>
           <div className="col-8 col-md-2 py-4 mx-2 mb-2 rounded border">
@@ -33,7 +35,7 @@ const Team = () => {
               <img
                 height={100}
                 width={100}
-                src={profile}
+                src={hs}
                 alt="..."
                 className="rounded-circle mb-3"
               />

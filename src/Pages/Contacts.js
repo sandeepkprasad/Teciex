@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import contactsImg from "../Assests/contacts-img.webp";
 import { FaMapMarkerAlt, FaMobileAlt } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 
 const Contacts = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section>
       <div className="container-lg py-5">

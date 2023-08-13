@@ -5,8 +5,8 @@ import logo from "../Assests/logo.jpg";
 const Navbar = () => {
   let location = useLocation();
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm">
-      <div className="container-lg">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow">
+      <div className="container-fluid">
         <Link className="navbar-brand fw-bold text-primary fs-3" to="/">
           <img width={150} src={logo} alt="..." />
         </Link>
@@ -57,6 +57,16 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 className={`nav-link fw-bold mx-2 ${
+                  location.pathname === "/portfolio" ? "active" : ""
+                }`}
+                to="/portfolio"
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className={`nav-link fw-bold mx-2 ${
                   location.pathname === "/contacts" ? "active" : ""
                 }`}
                 to="/contacts"
@@ -66,8 +76,8 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="ms-2 ms-md-4">
-            <Link className="btn btn-outline-primary shadow-sm" to="/contactus" role="button">
-              Contact Us
+            <Link className="btn btn-primary shadow-sm" to="/contactus" role="button">
+              Enquiry Now
             </Link>
           </div>
         </div>

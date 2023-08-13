@@ -5,7 +5,7 @@ const Testimonial = () => {
     <section>
       <div className="container-lg py-5">
         <div className="row justify-content-center">
-          <div className="col-6 col-md-6">
+          <div className="col-12 col-md-6">
             <div className="heading text-center">
               <p className="fw-bold text-muted mb-0">TESTIMONIALS</p>
               <h3 className="fw-bold">What Clients Say About Us</h3>
@@ -13,15 +13,39 @@ const Testimonial = () => {
           </div>
         </div>
         <div className="row justify-content-center mt-5">
-          <div className="col-8 colmd-6">
+          <div className="col-10 col=md-6">
             <div
               id="carouselExampleAutoplaying"
               className="carousel slide"
               data-bs-ride="carousel"
             >
+              <div className="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide-to="0"
+                  className="active bg-dark"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide-to="1"
+                  className="bg-dark"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide-to="2"
+                  className="bg-dark"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
               <div className="carousel-inner">
                 <div className="carousel-item active" data-bs-interval="2000">
-                  <div className="text">
+                  <div className="text d-block">
                     <p className="fw-bold">
                       <i>
                         "They have designed a highly creative and attractive
@@ -36,7 +60,7 @@ const Testimonial = () => {
                   </div>
                 </div>
                 <div className="carousel-item" data-bs-interval="2000">
-                  <div className="text">
+                  <div className="text d-block">
                     <p className="fw-bold">
                       <i>
                         "I just wanted to thank you for the excellent job you
@@ -51,7 +75,7 @@ const Testimonial = () => {
                   </div>
                 </div>
                 <div className="carousel-item" data-bs-interval="2000">
-                  <div className="text">
+                  <div className="text d-block">
                     <p className="fw-bold">
                       <i>
                         "Very Good Professional Web Design and Development
