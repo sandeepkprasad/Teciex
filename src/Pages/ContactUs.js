@@ -23,8 +23,6 @@ const ContactUs = () => {
                 type="name"
                 className="form-control rounded-5"
                 id="name"
-                name="name"
-                value=""
                 aria-describedby="emailHelp"
               />
               <label htmlFor="number" className="form-label fw-bold mt-3">
@@ -34,8 +32,6 @@ const ContactUs = () => {
                 type="number"
                 className="form-control rounded-5"
                 id="number"
-                name="number"
-                value=""
                 aria-describedby="emailHelp"
               />
             </div>
@@ -47,8 +43,6 @@ const ContactUs = () => {
                 type="email"
                 className="form-control rounded-5"
                 id="email"
-                name="email"
-                value=""
               />
             </div>
             <div className="mb-3">
